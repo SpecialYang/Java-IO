@@ -73,7 +73,6 @@ public class NIOServer {
             SocketChannel client = serverSocketChannel.accept();
             client.configureBlocking(false);
             client.register(selector, SelectionKey.OP_READ);
-
         } else if (key.isReadable()) {
             SocketChannel client = (SocketChannel) key.channel();
             int len = client.read(byteBuffer);

@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.specialyang</groupId>
-  <artifactId>IO-ALL</artifactId>
+  <artifactId>Java-IO</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
@@ -14,7 +14,7 @@
     <module>AIO</module>
   </modules>
 
-  <name>IO-ALL</name>
+  <name>Java-IO</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

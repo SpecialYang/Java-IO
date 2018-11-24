@@ -59,6 +59,7 @@ public class NIOServer extends Thread {
     private void process(SelectionKey key) throws IOException {
         if (key.isAcceptable()) {
             ServerSocketChannel server = (ServerSocketChannel) key.channel();
+            //接收和此通道的套接字的链接，并返回这个新连接的通道套接字
             SocketChannel client = server.accept();
             //证明使用的是单线程，且用的控制连接的端口，并没有新分配端口
             System.out.println(((InetSocketAddress) (client.getLocalAddress())).getPort());
